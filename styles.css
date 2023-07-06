@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --white: #fafafa;
+  --gray-1: #a9a9a9;
+  --black: #000;
+}
+/* 
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'PT Serif', serif;
+ */
+html {
+  height: 100%;
+}
+body {
+  width: 65vw;
+  height: 100%;
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+  color: var(--black, #000);
+  background-color: var(--white, #fafafa);
+}
+
+header {
+  padding: 110px 0 0 3px;
+  margin-bottom: 96px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+header h1 {
+  color: #000;
+  font-family: PT Serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -1.62px;
+}
+
+header .header-description h3 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+header .header-description p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 439px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.container .card-container:nth-child(3n + 2) {
+  margin-top: 99px;
+  margin-bottom: 0;
+}
+
+.container .card-container {
+  width: 264px;
+  height: 383px;
+  position: relative;
+  margin-bottom: 132px;
+}
+
+.container .card-container img {
+  width: 238px;
+  aspect-ratio: calc(476 / 682);
+}
+
+.container .card-container .card-role {
+  position: absolute;
+  top: 0;
+  right: 0;
+  writing-mode: vertical-lr;
+  font-family: PT Serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.container .card-container .card-name {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+footer {
+  margin-top: 115px;
+}
+footer p {
+  color: #a9a9a9;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding-bottom: 24px;
+}
